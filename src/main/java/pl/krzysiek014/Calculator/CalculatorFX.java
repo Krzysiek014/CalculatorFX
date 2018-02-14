@@ -1,6 +1,9 @@
 package pl.krzysiek014.Calculator;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -12,6 +15,10 @@ public class CalculatorFX extends Application{
     }
 
     public void start(Stage primaryStage) throws Exception {
+        AnchorPane layout = FXMLLoader.load(ClassLoader.getSystemResource("WindowStyle.fxml"));
+        Scene scene  = new Scene(layout);
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }

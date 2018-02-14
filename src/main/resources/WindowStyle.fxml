@@ -43,7 +43,10 @@
             <Button fx:id="divide" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" text="/" GridPane.columnIndex="3" />
          </children>
       </GridPane>
-      <TextField fx:id="lcd" layoutX="21.0" layoutY="14.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="lcd" alignment="CENTER_RIGHT" layoutX="21.0" layoutY="14.0" prefHeight="25.0" prefWidth="177.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
       <Label alignment="CENTER_RIGHT" layoutX="11.0" layoutY="209.0" prefHeight="17.0" prefWidth="193.0" text="CalculatorFX by Krzysiek014" textFill="#00000081">
          <font>
             <Font name="Arial" size="9.0" />
