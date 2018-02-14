@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * Created by Krzysiek014 on 13.02.2018.
@@ -19,6 +20,8 @@ public class CalculatorFX extends Application{
         Scene scene  = new Scene(layout);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
+        primaryStage.initStyle(StageStyle.UTILITY);
+        primaryStage.setTitle("CalculatorFX");
         primaryStage.show();
     }
 }
